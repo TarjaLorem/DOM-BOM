@@ -1,0 +1,255 @@
+@font-face {
+    font-family: 'IndieFlower';
+    src: url(../fonts/IndieFlower.ttf);
+}
+@font-face {
+    font-family: 'Nunito-Regular';
+    src: url(../fonts/Nunito-Regular.ttf);
+}
+@font-face {
+    font-family: 'Nunito-Bold';
+    src: url(../fonts/Nunito-Bold.ttf);
+}
+@font-face {
+    font-family: 'Righteous-Regular';
+    src: url(../fonts/Righteous-Regular.ttf);
+}
+* 
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 0;
+}
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+input[type="radio"]{
+    width: 22px;
+    height: 22px;
+}
+#main-menu {
+    padding-top: 50px;
+    position: absolute;
+    left: 3%;
+    top: 50%;
+    width: 20px;
+    z-index: 1;
+    transform: translate(0%, -50%);
+}
+
+.menu-anchor {
+    margin: 0 auto;
+    text-decoration: none;  
+}
+
+.point {
+    margin: 30px auto;
+    width: 15px;
+    height: 15px;
+    border-radius: 2.5em;
+    border: 3px solid #1C223C;
+    background-color: none;  
+}
+.point:hover {
+    border:3px solid #484B58;
+}
+.header {
+    width: 100%;
+    background: #fff;
+}
+.short-header {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px 0 10px;
+}
+.short-header_logo {
+    font-family: IndieFlower;
+    font-weight: 900;
+    font-size: 45px;
+    line-height: 70px;
+    color: #2E2C2C;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+.wrapper {
+    max-width: 70%;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 160px;
+}
+.lang {
+  display: none;
+}
+
+.lang.visible {
+    display: inline;
+    font-family: Open sans;
+    font-size: 25px;
+    color: #1D265C;
+ }
+ .lang-user {
+    font-family: IndieFlower;
+    font-weight: 500;
+    font-size: 30px;
+    color: #090E2E;
+    letter-spacing: 4px;
+ }
+.lang-label {
+    font-size: 30px;
+    font-weight: 900;
+    font-family: Nunito-Regular;
+    color: #25253D;
+}
+.main-title {
+    margin: 100px auto 0;
+    text-align: center;
+    cursor: pointer;
+}
+.title_desc {
+    font-family: Nunito-Regular;
+    font-weight: 900;
+    font-size: 45px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    color: #171717;
+}
+.content {
+    max-width: 70%;
+    margin: 0 auto;
+}
+.container-task {
+    margin: 50px auto 0;
+    text-align: center;
+    display: none;
+}
+.task-href {
+    font-family: IndieFlower;
+    font-weight: 900;
+    font-size: 35px;
+    line-height: 60px;
+    color: #1D1D30;
+    padding-right: 20px;
+}
+.task-href:hover {
+    color: #3C3C58;
+}
+.download-message {
+  display: none;
+}
+.validate-body {
+    background: #DBDBDB;
+}
+.main-form {
+    margin-top: 100px;
+    position: absolute;
+    top: 30%;
+    left: 20%;
+}
+input {
+    width: 250px;
+    border: 1px solid #8C90A8;
+    margin-right: 30px;
+    margin-bottom: 30px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-family: Nunito-Bold; 
+    font-size: 15px;
+}
+.add-validate {
+    font-family: Nunito-Bold; 
+    font-size: 16px;
+	color: #fff;
+    border-radius: 10px;
+    padding: 5px 20px;
+    transition: all 0.1s;
+    background: #3E488D;
+}
+.add-validate:hover {
+    background: #50588D;
+}
+.employeeList {
+    margin: 50px 0 50px 30px;
+    display: flex;
+    flex-direction: column;
+}
+.employeeCount {
+    margin-left: 30px;
+}
+.addEmployee {
+    width: 200px;
+    font-family: Nunito-Bold; 
+    font-size: 16px;
+	color: #fff;
+    border-radius: 5px;
+    padding: 5px 20px;
+    transition: all 0.1s;
+    background: #1B431B; 
+}
+.addEmployee:hover {
+    background: #21511F; 
+}
+.addCount {
+    width: 150px;
+    font-family: Nunito-Bold; 
+    font-size: 16px;
+	color: #fff;
+    border-radius: 5px;
+    padding: 5px 20px;
+    transition: all 0.1s;
+    background: #3E488D;
+    margin-left: 30px;
+}
+.addCount:hover {
+    background: #3F5780;
+}
+.formWrapp {
+    max-width: 50%;
+    display: flex;
+    flex-direction: column; 
+}
+
+.additional-href {
+    width: 300px;
+    font-family: IndieFlower;
+    font-weight: 900;
+    font-size: 25px;
+    letter-spacing: 3px;
+    color: #fff;
+    border-radius: 10px;
+    padding: 15px 60px;
+    margin-top: 50px;
+    transition: all 0.1s;
+    background: #3E488D; 
+}
+#languages {
+    margin-bottom: 25px;
+}
+#save {
+    font-family: Nunito-Bold; 
+    font-size: 25px;
+	color: #fff;
+    border-radius: 10px;
+    padding: 10px 40px;
+    margin-top: 50px;
+    transition: all 0.1s;
+    background: #3E488D;
+}
+#save:hover {
+    background: #565E8E; 
+}
+#section0 {
+    background-image: url(../img/section-1.jpg);
+    background-position: center;
+} 
+
+#section1 {
+    background-image: url(../img/section-2.jpg);
+}
+
+#section2 {
+    background-image: url(../img/section-3.jpg);
+}

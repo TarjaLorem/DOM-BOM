@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
+    <script src="js/jquery-3.2.1.js"></script>
+    <script src="js/jquery.fullPage.min.js"></script>
+    <script type="text/javascript" src="js/jquery.scrollTo.min.js"></script>
+
+
+    <title>DOM BOM</title>
+</head>
+
+<body>
+    <ul id="main-menu">
+
+        <li data-menuanchor="firstPage" class="active">
+            <a href="#firstPage" class="menu-anchor">
+                <p class="point"></p>
+            </a>
+        </li>
+
+        <li data-menuanchor="secondPage">
+            <a href="#secondPage" class="menu-anchor">
+                <p class="point"></p>
+            </a>
+        </li>
+
+        <li data-menuanchor="3rdPage">
+            <a href="#3rdPage" class="menu-anchor">
+                <p class="point"></p>
+            </a>
+        </li>
+    </ul>
+
+    <div class="fullpage">
+        <div class="section" id="section0">
+            <header class="header">
+                <div class="short-header">
+                    <span class="short-header_logo">Homework</span>
+                </div>
+            </header>
+
+            <div class="wrapper">
+                <div id="languages">
+                    <label class="lang-label">
+                        <input type="radio" name="lang" value='ua'>UA
+                    </label>
+                    <label class="lang-label">
+                        <input type="radio" name="lang" value='ru'>RU
+                   </label>
+                    <label class="lang-label">
+                        <input type="radio" name="lang" value='eng'>ENG
+                   </label>
+                </div>
+
+                <div id="welcome-message">
+                    <span class="lang lang-ua visible">Привіт,</span>
+                    <span class="lang lang-ru">Привет,</span>
+                    <span class="lang lang-eng">Hello,</span>
+                    <span class="lang-user"> username!</span>
+
+                    <span class="lang lang-ua visible">Раді тебе бачити!</span>
+                    <span class="lang lang-ru">Здравcтвуйте!</span>
+                    <span class="lang lang-eng">Glad to see you!</span>
+                </div>
+                <button id="save">Reset</button>
+            </div>
+        </div>
+        <div class="section" id="section1">
+            <header class="header">
+                <div class="short-header">
+                    <span class="short-header_logo">Homework</span>
+                </div>
+            </header>
+            <div class="content">
+                <div class="main-title">
+                    <span class="title_desc">Must have tasks</span>
+                </div>
+
+                <div class="container-task">
+                    <a href="https://jsfiddle.net/g2wkha1u/486/" class="task-href">Parallax</a>
+                    <a href="https://jsfiddle.net/snsyLb3a/254/" class="task-href">OS message</a>
+                    <a href="validation/index.html" class="task-href">Validation</a>
+                    <a href="#" class="task-href">Stop (prevent) events</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="section" id="section2">
+            <header class="header">
+                <div class="short-header">
+                    <span class="short-header_logo">Homework</span>
+                </div>
+            </header>
+            <div class="wrapper">
+                <a href="emploee/index.html" class="additional-href">Additional</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
