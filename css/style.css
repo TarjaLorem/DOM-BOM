@@ -213,10 +213,10 @@ input {
 }
 
 .additional-href {
-    width: 300px;
+    width: 320px;
     font-family: IndieFlower;
     font-weight: 900;
-    font-size: 25px;
+    font-size: 33px;
     letter-spacing: 3px;
     color: #fff;
     border-radius: 10px;
@@ -224,6 +224,24 @@ input {
     margin-top: 50px;
     transition: all 0.1s;
     background: #3E488D; 
+}
+.additional-href:hover {
+    background: #50588B;
+}
+.appendLi {
+    font-family: Open sans; 
+    font-weight: 900;
+    font-size: 15px;
+    margin: 30px;
+}
+.events-title {
+    max-width: 700px;
+    margin: 50px 0 0 50px;
+}
+.events_desc {
+    margin-top: 20px;
+    font-family: Nunito-Regular;
+    font-size: 25px;
 }
 #languages {
     margin-bottom: 25px;

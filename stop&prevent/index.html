@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/jquery-3.2.1.js"></script>
+    <title>Stop and prevent events</title>
+</head>
+
+<body class="validate-body">
+    <header class="header">
+        <div class="short-header">
+            <a href="../index.html" id="preventDefault"><span class="short-header_logo">Homework</span></a>
+        </div>
+    </header>
+
+    <div class="events-title">
+        <p class="events_desc prop">The event.stopPropagation() method stops the bubbling of an event to parent elements, preventing any parent event handlers from being executed.
+        </p>
+        <p class="events_desc default">The preventDefault() method cancels the event if it is cancelable, meaning that the default action that belongs to the event will not occur.</p>
+        <p class="events_desc default">The preventDefault() method does not prevent further propagation of an event through the DOM. We need use the stopPropagation() method to handle this. So, you can try yourself and click on the page. </p>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
