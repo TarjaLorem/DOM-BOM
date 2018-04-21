@@ -6,7 +6,7 @@ function createForm() {
     let first = '<input type="text" name="age" placeholder="age" >';
     let second = '<input type="text" name="username" placeholder="username" >';
     let third = '<input type="text" name="date" placeholder="date" >';
-    let submit = '<input type="submit" value="Validate Me" class="add-validate">';
+    let submit = '<input type="submit" value="Validate" class="add-validate">';
 
     document.body.appendChild(form);
     form.insertAdjacentHTML('afterbegin', first);
