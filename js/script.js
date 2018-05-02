@@ -54,12 +54,12 @@ $(document).ready(function () {
         if (radios) {
             for (var i = 0; i < radios.length; i++) {
                 radios[i].addEventListener('change', changeLanguage);
+                radios[0].checked = true;
             }
         }
     })();
 
-
     var $save = document.querySelector('#save')
-    $save.addEventListener('click', changeLanguage); // збереження мови відбувається без кнопки save
+    $save.addEventListener('click', changeLanguage); 
 
 });

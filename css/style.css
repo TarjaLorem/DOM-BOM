@@ -228,6 +228,15 @@ input {
     font-size: 15px;
     margin: 30px;
 }
+.appendEmp {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    font-family: Open sans; 
+    font-weight: 900;
+    font-size: 15px;
+    margin: 30px;  
+}
 .events-title {
     max-width: 700px;
     margin: 50px 0 0 50px;

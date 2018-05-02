@@ -22,8 +22,10 @@ function validation() {
     let age = document.getElementsByName("age")[0].value;
     if (age < 0 || age.includes(' ') || !Number.isInteger(parseInt(age))) {
         alert("input age is not valid");
-    }
-
+    }else if (age == 0 || age >= Math.pow(10,5)) {
+        alert("input age is not valid"); 
+    };
+    
     let username = document.getElementsByName("username")[0].value;
     if (username.substring(0,4) != "user") {
         alert("input username is not valid");

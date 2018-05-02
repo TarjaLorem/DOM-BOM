@@ -31,7 +31,7 @@ var addEmployee = function () {
 
     var addSubmit = $("<button></button>")
         .attr("class", "addEmployee")
-        .text("Add New emplyee");
+        .text("Add New employee");
 
     var countEmp = $("<input type='text'>")
         .attr("class", "employeeCount")
@@ -44,11 +44,14 @@ var addEmployee = function () {
         .click(setLimit);
     var appendLi = $("<li></li>")
         .attr("class", "appendLi");
+    var appendEmp = $("<li></li>")
+        .attr("class", "appendEmp");
     $(divWrapp).append(countEmp);
     $(divWrapp).append(addCount);
     $(newForm).append(firstName, lastName, salary, position);
     $(addSubmit).appendTo(newForm);
     $("body").append(appendLi);
+    $("body").append(appendEmp);
     $(addSubmit).click(addToList);
 };
 
@@ -102,6 +105,7 @@ function addToList() {
 
     listEmp.push(user);
     $('.appendLi').html('Count of employees: ' + listEmp.length);
+    $('.appendEmp').html('First name: ' + user.firstName + '<br>Last name: ' + user.lastName + '<br>Salary: ' + user.salary + '<br>Position: ' + user.position);
     console.log(listEmp);
     return false;
 };
